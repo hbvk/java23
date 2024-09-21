@@ -11,7 +11,7 @@ pool:
 
 steps:
 - bash: 'wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.tar.gz '
-  displayName: 'Download Java 22'
+  displayName: 'Download Java 23'
 - task: JavaToolInstaller@0
   displayName: 'Use Java 23'
   inputs:
@@ -20,7 +20,7 @@ steps:
     jdkSourceOption: LocalDirectory
     jdkFile: '$(build.sourcesdirectory)/jdk-23_linux-x64_bin.tar.gz'
     jdkDestinationDirectory: '$(agent.toolsDirectory)/jdk23'
-- task: Maven@3
+- task: Maven@4
   displayName: 'Build project'
   inputs:
     mavenPomFile: 'pom.xml'
