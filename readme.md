@@ -2,9 +2,9 @@
 
 [![Build Status](https://dev.azure.com/hbvk/java-test/_apis/build/status%2Fhbvk.java23?branchName=main)](https://dev.azure.com/hbvk/java-test/_build/latest?definitionId=42&branchName=main)
 
-| Release    | EOL     | Class File Version |
-|------------|---------|--------------------|
-| 2024-09-17 | 2025-06 | 67.0               |
+| JDK                                            | Release    | EOL     | Class File Version |
+|------------------------------------------------|------------|---------|--------------------|
+| [JDK 23](https://openjdk.org/projects/jdk/23/) | 2024-09-17 | 2025-06 | 67.0               |
 
 # New Features
 
